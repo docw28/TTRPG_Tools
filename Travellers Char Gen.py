@@ -10,7 +10,19 @@ def Base_Stat_Gen(upper_lim,lower_lim):
         Base_stats = stat_names[y] +": "+str(Raw_stats[y])
         print(Base_stats)
     return Base_stats
-    
 
+class Character:
+    STR = 0
+    DEX = 0
+    END = 0
+    INT = 0
+    EDU = 0
+    SOC = 0
+    NAME = ""
+    RACE = "Human"
+    CAREER = Career
+
+class Career:
+    Past_Career_Quantity = 0
 print(Base_Stat_Gen(12,2))
     
